@@ -1,7 +1,7 @@
 # legalJ
 
 ## Tokens: 
-USE, OBJ, VAL, FUN,  REQ, LIM, IF, ELSE, AND, OR, COL (:), SEMI (;), COM (,), PER (.), SQTE ('), DQTE ("), UND (_), EQ (=), NAME, LPAR, RPAR, LANG (<), LAND_EQ, RANG (>), RANG_EQ,  LBRACK ([), RBRACK (]), LBRACE ({), RBRACE (}), ESC (\), AT (@), HASH (#), PLUS, PLUS_EQ, MIN, MIN_EQ, MULT, MULT_EQ, DIV, DIV_EQ, PERC (%), PERC_EQ, DOLL ($), DOLL_EQ, CAR (^), CAR_EQ, AMP (&), AND_EQ, PIPE (|), PIPE_EQ, TILDE (~), TILDE_EQ, QUES (?), QUES_EQ, EXCL (!), EXCL_EQ
+USE, OBJ, VAL, FUN,  REQ, LIM, IF, ELSE, AND, OR, RET, COL (:), SEMI (;), COM (,), PER (.), DQTE ("), UND (_), EQ (=), NAME, LPAR, RPAR, LANG (<), LAND_EQ, RANG (>), RANG_EQ,  LBRACK ([), RBRACK (]), LBRACE ({), RBRACE (}), ESC (\), AT (@), HASH (#), PLUS, PLUS_EQ, MIN, MIN_EQ, MULT, MULT_EQ, DIV, DIV_EQ, PERC (%), PERC_EQ, DOLL ($), DOLL_EQ, CAR (^), CAR_EQ, AMP (&), AND_EQ, PIPE (|), PIPE_EQ, TILDE (~), TILDE_EQ, QUES (?), QUES_EQ, EXCL (!), EXCL_EQ
 
 ## Expressions:
 ```
@@ -15,6 +15,8 @@ VAL_DECL : VAL [NAME_LIST] (COL [NAME_LIST] | ε) EQ [EXPR_LIST]
 
 IF_STMT : IF COL [COND] EQ [EXPR_LIST] SEMI ([ELSE_STMT] | ε)
 ELSE_STMT : 
+
+RET_STMT : RET [EXPR] SEMI
 
 ```
 
