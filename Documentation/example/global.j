@@ -1,13 +1,16 @@
 # this is a comment
 
+# global.j is case insensitive
 # global statements are only allowed here
-# main.j may also be called global.j
 
 val a, b, c = 1, 3.14, "Hello"            # multiple declarations allowed
-val x, y: Int = " World!", 1              # y is specified to be an Int
+val x: Str, y: Int = " World!", 1
 val j, h > Dec = 1.0, 2.3                 # j and h are specified to be a Dec
 
 a, j = 2, 4.14
+j, h = 1.111                              # j and h equal 1.111
+
+
 
 
 
@@ -28,6 +31,4 @@ fun sort': Int index, [Int] nums > [Int] =
       ret ___ += sort': (index += 1, nums);
    ret ___; # surely there's a better way to write this recursion? 
             # so many of the variables are carried between calls...
-
-j, h = 1.111 # is this legal?
 

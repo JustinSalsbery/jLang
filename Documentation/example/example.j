@@ -23,7 +23,7 @@ obj Cat: Animal =                         # class implementing a protocol
 obj AnimalShelter =
    val animals: [Animal] = [Cat: ("Peanuts")] # array of Animals, initialized with 1 cat
    val employeeID = {1: "John", 2: "Lucy"}    # dictionary
-   fun +: Animal animal =                 # +, -, *, /, %, ^, &, |, {}, [], <>, ?, !, $ can all be defined for user types
+   fun +: Animal animal =                 # +, -, *, /, %, ^, &, |, {}, [], <>, <, >, <<, >>, ?, !, $ can all be defined for user types
       animals += [animal];;               # add to array
 
 
@@ -41,15 +41,30 @@ obj Cat: Animal, Living
 or req Animal: Living
 or req Animal = val Living
 
-Updating set, dictionary... Searching for element? Dictionary.contains; set.contains
+Set: Subset, Union, Conjunction, ..., Contains, Add, Remove, Size, Iterate
+Dictionary: Contains, Add, Remove, Update, Size, Iterate
+Array: Add +, Remove[] -, Update[] =, Contains, Index[], Iterate, Size
+Tuple: Update<> =, Index<>, Size
+String: Append +, Update =, Index[], Subset/Contains <, Iterate, Size
 
-String.contains: ("ab")
+Size, Count, Length: What vocab?
 
-<< doesn't this break? binary shift operator. It would be two LANG tokens and couldn't be modified/overriden in user objects
+Generic Type: A, B, C < No single letter Obj? Or a keyword for generics?
 
-So <> custom defines a "tuple" like wrapper, but < custom defines less than... That's confusing.
+fun forEach: [a] elements, (a) toDo = ... ; # The return would be ignored... Should there be an option
+                                   # to pass in functions with a return type if no return is expected?
+
+Tree[1, 2, 3] or [1, 2, 3]: (sorted: true) < So obj declaration, or constructor... 
+Do any of the other collections have constructors? (Array: Size)
+
+Passing in argument from terminal? (Use case: making a compiler and passing a file in...)
 
 
+
+
+
+File: Read, Write
+Terminal: Read, Write
 
 Multiple return
 
@@ -68,10 +83,6 @@ Using $= and as a parameter
 Overriding
 
 Using optionals
-
-Array, Tree, Set, Dictionary, Tuple
-
-Multiple returns
 
 AnimalCarrier
 if: 6 < x < 9 # continued expression disallowed
