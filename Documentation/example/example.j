@@ -121,17 +121,9 @@ Compiler uses _ to say it doesn’t care about that return.
 
 
 
-Require . to indicate scope… Is there ever an occasion where you don’t know the scope with “generics”. 
-Where valName may be in scope, but may be out of scope as well? (Is there a benefit to this? 
-To requiring correct indication of scope? To not just consecutively searching higher scopes?
-
-
 "Immutability makes it easier to write, use and reason about the code"
 Require going through a setter, even if in the same object?
 Is copying, like this, really more syntax and more complex logic?
-
-
-
 
 
 
@@ -154,7 +146,7 @@ fun sort': Int index, [Int] nums > [Int] =
 
 
 
-How do I express this? 
+How do I express this? (Haskell :: a -> a -> Bool) Issue: I need to define this/self... 
 req Ord: Eq =
    fun >: 
 
@@ -163,3 +155,28 @@ obj Foo: Ord =
       ... ;
    fun >: Foo a > Bool =
       ... ;
+
+
+
+
+
+UFCS: Use _ , multiple args pass in, fill in _
+
+File initialization returns optional depending on successful opening — error prevention — what went wrong specifically?
+
+obj x =
+      val a = 3
+      fun b =
+            ret a + 1;
+      fun c > () =
+            ret b;; # what value is a?
+# store the current value? 
+# store a reference? the most j like thing, though a copy constructor could change that (this is another thing to keep in mind for in scope/out of scope memory — though it shouldn’t be a problem)
+
+How does the getter work? Pass back a copy automatically? Or just say you don’t have permission to change?
+
+Constants and variable… part 2
+
+TypeName = self/this
+Use Global. syntax to access Global object values.
+
