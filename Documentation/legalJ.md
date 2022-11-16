@@ -1,7 +1,7 @@
 # legalJ
 
 ## Tokens: 
-USE, OBJ, VAL, FUN,  REQ, LIM, IF, ELSE, AND, OR, RET, COL (:), SEMI (;), COM (,), PER (.), DQTE ("), UND (_), EQ (=), NAME, LPAR, RPAR, LANG (<), LANG_EQ, RANG (>), RANG_EQ,  LBRACK ([), RBRACK (]), LBRACE ({), RBRACE (}), ESC (\), AT (@), HASH (#), PLUS, PLUS_EQ, MIN, MIN_EQ, MULT, MULT_EQ, DIV, DIV_EQ, PERC (%), PERC_EQ, DOLL ($), DOLL_EQ, CAR (^), CAR_EQ, AMP (&), AND_EQ, PIPE (|), PIPE_EQ, TILDE (~), TILDE_EQ, QUES (?), QUES_EQ, EXCL (!), EXCL_EQ # NOTE: LANG_LANG, RANG_RANG ARE NOT TOKENS
+USE, OBJ, VAL, FUN,  REQ, LIM, IF, ELSE, AND, OR, RET, COL (:), SEMI (;), COM (,), PER (.), DQTE ("), UND (_), EQ (=), NAME, LPAR, RPAR, LANG (<), LANG_EQ, RANG (>), RANG_EQ,  LBRACK ([), RBRACK (]), LBRACE ({), RBRACE (}), ESC (\), AT (@), HASH (#), PLUS, PLUS_EQ, MIN, MIN_EQ, MULT, MULT_EQ, DIV, DIV_EQ, PERC (%), PERC_EQ, DOLL ($), DOLL_EQ, CAR (^), CAR_EQ, AMP (&), AND_EQ, PIPE (|), PIPE_EQ, TILDE (~), TILDE_EQ, QUES (?), QUES_EQ, EXCL (!), EXCL_EQ # NOTE: LANG_LANG, RANG_RANG ARE NOT TOKENS (due to tuples)
 
 ## Expressions:
 ```
